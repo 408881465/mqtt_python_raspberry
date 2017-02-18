@@ -4,7 +4,7 @@ import paho.mqtt.client as mqtt
 GPIO.setmode(GPIO.BOARD) 
 GPIO.setup(13,GPIO.IN) 
 mqttc=mqtt.Client() 
-mqttc.username_pw_set(username="lionell", password="150390")
+mqttc.username_pw_set(username="lionell", password="*******"")
 mqttc.connect("m10.cloudmqtt.com",11793,60) 
 mqttc.loop_start() 
 def reading1():
